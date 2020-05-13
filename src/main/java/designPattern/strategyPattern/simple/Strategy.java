@@ -1,4 +1,4 @@
-package designPattern.StrategyPattern.simple;
+package designPattern.strategyPattern.simple;
 
 /**
  * @Description 策略模式抽象接口

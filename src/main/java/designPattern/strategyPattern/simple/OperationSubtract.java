@@ -1,4 +1,4 @@
-package designPattern.StrategyPattern.simple;
+package designPattern.strategyPattern.simple;
 
 /**
  * @Description 具体策略类

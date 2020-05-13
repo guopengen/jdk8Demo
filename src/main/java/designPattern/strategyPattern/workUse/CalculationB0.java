@@ -1,4 +1,4 @@
-package designPattern.StrategyPattern.workUse;
+package designPattern.strategyPattern.workUse;
 
 import lombok.extern.slf4j.Slf4j;
 

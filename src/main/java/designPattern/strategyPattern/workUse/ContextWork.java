@@ -1,6 +1,4 @@
-package designPattern.StrategyPattern.workUse;
-
-import designPattern.StrategyPattern.simple.Strategy;
+package designPattern.strategyPattern.workUse;
 
 import java.util.Date;
 
