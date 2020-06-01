@@ -14,6 +14,20 @@ import java.util.stream.Collectors;
  */
 public class groupByTest {
     public static void main(String[] args) {
+        String groupStr = "1:2:3";
+        String[] groupArray = groupStr.split(":");
+        System.out.println(groupArray);
+
+
+
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append(",");
+        String[] stringBuilderArray = stringBuilder.toString().split(",");
+        String flashContent = "";
+        if (stringBuilderArray.length > 0) {
+            flashContent = stringBuilderArray[0];
+        }
+
         Date date1 = new Date();
         System.out.println(date1.before(date1));
         List<String> items = Arrays.asList("apple", "apple", "banana", "apple", "orange", "banana", "papaya");

@@ -33,6 +33,13 @@ public class AppMain {
     private static final int BYTE_BLANK = 32;
     private static final int FIEXD_SIZE = 16;
     public static void main(String[] args) {
+
+        Date today = new Date();
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTime(today);
+        int hour = calendar.get(Calendar.HOUR_OF_DAY);
+        System.out.println(hour);
+
         BigDecimal a = new BigDecimal("2.25");
         BigDecimal b = new BigDecimal("2.29");
         BigDecimal d = new BigDecimal("2.29");
@@ -133,11 +140,6 @@ public class AppMain {
 
 
         //Calendar
-        Date today = new Date();
-        Calendar calendar = Calendar.getInstance();
-        calendar.setTime(today);
-        int hour = calendar.get(Calendar.HOUR_OF_DAY);
-        System.out.println(hour);
 
         //jodaTime
         DateTime recordCreateTime = new DateTime();
@@ -260,7 +262,7 @@ public class AppMain {
 
         //解密：
 
-        String decryptStr = "eyJjYXNlVHlwZSI6IkExLVdFQUsiLCJjb21wYW55TW9iaWxlIjoiMTAwODYiLCJjb21wYW55U2VsZiI6IuW+ruS/oeWFrOS8l+WPt+i/mOasvjEiLCJjdXN0S2V5IjoiemhhbmdtZW5nXzA0MjEyMyIsImN1c3ROYW1lIjoiTTAwNDIxMjMiLCJlbnRydXN0QXBwTmFtZSI6ImhhbmdnZXJCaXoiLCJnZW5kZXIiOiLlpbMiLCJvdmVyZHVlQW1vdW50IjoyMDAuMDAsIm92ZXJkdWVEYXkiOjEwLCJwcm9kdWN0VHlwZURlc2MiOiLnmb3mnaEiLCJyZXBheVdheSI6IuW+ruS/oeWFrOS8l+WPt+i/mOasviIsInRvdGFsQW1vdW50IjoxMDAwLjAwfQ==";
+        String decryptStr = "MUV50X9P/PjwZfdF6NofbJkU5IYWU/rb00h613w+fhQ=";
         System.out.println("解密前："+decryptStr);
         try {
             String str = decrypt(decryptStr, "JDPASS2020000000".getBytes(CHARSET_NAME), "jd2020@1833_0601".getBytes(CHARSET_NAME));
