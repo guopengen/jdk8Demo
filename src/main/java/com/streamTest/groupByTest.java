@@ -69,6 +69,9 @@ public class groupByTest {
         students.add(student5);
         students.add(student6);
 
+        System.out.println(students);
+        students = students.stream().filter(student -> student.getAge() > 100).collect(Collectors.toList());
+        System.out.println(students);
         //年龄筛选
         List<Student> studentAge = students.stream().filter(student -> student.getAge() > 100).collect(Collectors.toList());
 

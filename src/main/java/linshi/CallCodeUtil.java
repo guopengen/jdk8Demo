@@ -2,7 +2,6 @@ package linshi;
 
 import com.alibaba.fastjson.JSON;
 import org.apache.commons.codec.binary.Base64;
-import org.apache.commons.lang3.StringUtils;
 import sun.misc.BASE64Decoder;
 import sun.misc.BASE64Encoder;
 
@@ -18,7 +17,7 @@ import javax.crypto.spec.SecretKeySpec;
  * * @param null
  */
 public class CallCodeUtil {
-    private static final String ALGORITHM = "AES/CBC/PKCS5Padding";
+    /*private static final String ALGORITHM = "AES/CBC/PKCS5Padding";
 
     private static final String UTF8 = "UTF-8";
 
@@ -118,10 +117,10 @@ public class CallCodeUtil {
         return StringUtils.isBlank(target) ? null : target.trim();
     }
 
-    /*
+    *//*
      * 加密：AES ---> BASE64
      * 解密：BASE64 ----> AES
-     */
+     *//*
     public static void main(String[] args) throws Exception {
 
         String key = "JDPASS2020000000";
@@ -131,12 +130,12 @@ public class CallCodeUtil {
         //recodeParam.setComplexrecord("1");
         recodeParam.setDepnum("8002");
         recodeParam.setPageinfo("1_60");
-        /*recodeParam.setAgentname("");
+        *//*recodeParam.setAgentname("");
         recodeParam.setCaller("");
         recodeParam.setGroupename("");
         recodeParam.setRecordtime("");
         recodeParam.setTalklen("");
-        recodeParam.setCalled("");*/
+        recodeParam.setCalled("");*//*
         String str = JSON.toJSONString(recodeParam);
         System.out.println("加密前："+str);
         //String srcStr = "DL1Vn9SLQz3uEgJfr9hCQGeQWNVuVyGPF7SDUEVAAXphpk7Y4ivExa0CCStgYN/Cx8/3/0H96DzdfPYeggbJScRYOFvdhVrRT2xpuKpDNEmVN1TZd0siYDX9ykEoY5cZ1nXjdU39dtyaAQY+4197SDsXjwWuHw1AwJosxpFLGeTsAMJPwIq/gpVr2r3D8MBzrvAT+ea7d83eUKPvOoaVKgZuswF4q1WGfUlA50IbArdGgb5ljQQhiXYZWJjbmcBMallA3R9WSUtvbWFGq0Tplof5UB14VRTcuzLWFHm7TAHeR45bhmWAd6UE+t52jadAcXPufxaAeEe6AmpJkRwXiqZiVMOPXVnUG3EUwBdMCv1h9L1Gt9cxc0DpG/xrgfCxopntRg+0TK7WnesBuROjYQ1VChzG+Yep0ZrMXMQB7nDbJw6kOmR0AeLfTZygnVNTZmD3bM1gzbcknGgUvxEWHJ42R046GTtyHYCK+sGXOFZIitsXAkQLfc34VqFikcMtqloT2ubJApE58X+IF8ub7YbAcbjJftRk7Hd9aVnMk8Y=";
@@ -156,5 +155,5 @@ public class CallCodeUtil {
 //        System.out.println(enStr);
         //String deStr = decode(srcStr, key, iv);
         //System.out.println(deStr);
-    }
+    }*/
 }

@@ -1,7 +1,6 @@
 package linshi;
 
 import com.sun.org.apache.xpath.internal.SourceTree;
-import org.apache.commons.lang3.time.DateUtils;
 
 import java.awt.*;
 import java.math.BigDecimal;
@@ -43,7 +42,6 @@ public class PageTest {
 
 
         Date date = new Date();
-        System.out.println(DateUtils.addMinutes(date, -60));
 
         List<String> list=new ArrayList<String>();
         list.add("111");

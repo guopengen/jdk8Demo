@@ -40,6 +40,12 @@ public class StreamFirstTest {
         accounts.add("zhaoliu");
         System.out.println("begin:"+accounts);
 
+        accounts.stream().peek(str->{
+            System.out.println(str);
+            str = "123";
+        }).collect(Collectors.toList());
+        System.out.println(accounts);
+
         //业务要求，字符串长度大于等于5的才算有效账号
         //1.1  for循环遍历
         for (String account : accounts) {

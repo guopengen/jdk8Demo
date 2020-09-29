@@ -14,8 +14,10 @@ import java.util.List;
  */
 public class BigTest {
     public static void main(String[] args) {
+        System.out.println("王adasds".substring(0, 1) + "**");
 
-        List<Person> personList = new ArrayList<>();
+
+        /*List<Person> personList = new ArrayList<>();
         for (int i=0;i<300000;i++){
             Person person = new Person();
             person.setName("xiao"+i);
@@ -23,7 +25,7 @@ public class BigTest {
             person.setBigDecimal(new BigDecimal("0"));
             personList.add(person);
         }
-        System.out.println(personList);
+        System.out.println(personList);*/
 
 
     }

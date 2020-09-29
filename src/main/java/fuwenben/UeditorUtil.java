@@ -25,7 +25,15 @@ public class UeditorUtil {
     }
 
     public static void main(String[] args) {
-        String htmlText = "<html>sf</html>";
-        System.out.println(getTextByHtml(htmlText));
+        /*String htmlText = "<html>sf</html>";
+        System.out.println(getTextByHtml(htmlText));*/
+        System.out.println(UrgeModeEnum.FLASH);
+
+        for (int i = 0; i < 6; i++) {
+            for (int j = 0; j < 40; j++) {
+                int tableIndx = i * 40 + j;
+                System.out.println(tableIndx);
+            }
+        }
     }
 }

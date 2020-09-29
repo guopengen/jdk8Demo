@@ -3,9 +3,9 @@ package linshi;
 import com.alibaba.fastjson.JSON;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import org.apache.commons.lang3.ArrayUtils;
+/*import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.lang3.StringUtils;
-import org.apache.commons.lang3.time.DateUtils;
+import org.apache.commons.lang3.time.DateUtils;*/
 import org.joda.time.DateTime;
 
 import javax.crypto.Cipher;
@@ -26,7 +26,7 @@ import sun.misc.BASE64Encoder;
  * @Date 2019/12/26 15:28
  */
 public class AppMain {
-    public static final String CHARSET_NAME = "utf-8";
+    /*public static final String CHARSET_NAME = "utf-8";
     public static final String AES_CBC_PKCS5_PADDING = "AES/CBC/PKCS5Padding";
     public static final String AES = "AES";
     // 不足16的倍數的時候，补空格
@@ -109,7 +109,7 @@ public class AppMain {
         }
         System.out.println(configMap);
 
-        /*String phone = "北京大1";
+        *//*String phone = "北京大1";
         String adress = "123456";
         System.out.println(phone.substring(0,3)+"****"+phone.substring(phone.length()-4));
         System.out.println(adress.substring(0,6)+"********");
@@ -136,7 +136,7 @@ public class AppMain {
             fir.setFirstNum(i+1);
             System.out.println(fir.getFirstNum());
         }
-        System.out.println(thirds);*/
+        System.out.println(thirds);*//*
 
 
         //Calendar
@@ -229,14 +229,14 @@ public class AppMain {
         QzSpecificityCaseRes qzSpecificityCaseRes = JSON.parseObject(importQzSpecificityCase.getRes(),QzSpecificityCaseRes.class);
         System.out.println(importQzSpecificityCase);
 
-        /*List<QzSpecificityCaseResInfo> qzSpecificityCaseResInfoList = new ArrayList<>();
+        *//*List<QzSpecificityCaseResInfo> qzSpecificityCaseResInfoList = new ArrayList<>();
         QzSpecificityCaseResInfo qzSpecificityCaseResInfo = new QzSpecificityCaseResInfo();
         qzSpecificityCaseResInfo.setCaseNumber("232dd");
         qzSpecificityCaseResInfo.setErrCode(3);
 
         QzSpecificityCaseRes qzSpecificityCaseRes = new QzSpecificityCaseRes();
         qzSpecificityCaseRes.setDefeatSize(1);
-        qzSpecificityCaseRes.setResponses();*/
+        qzSpecificityCaseRes.setResponses();*//*
 
 
 
@@ -247,12 +247,12 @@ public class AppMain {
             recodeParam.setComplexrecord("1");
             recodeParam.setDepnum("8004");
             recodeParam.setPageinfo("1_60");
-            /*recodeParam.setAgentname("");
+            *//*recodeParam.setAgentname("");
             recodeParam.setCaller("");
             recodeParam.setGroupename("");
             recodeParam.setRecordtime("");
             recodeParam.setTalklen("");
-            recodeParam.setCalled("");*/
+            recodeParam.setCalled("");*//*
             String str = JSON.toJSONString(recodeParam);
             System.out.println("加密前："+str);
             System.out.println("加密后："+encrypt(str, "JDPASS2020000000".getBytes(), "jd2020@1833_0601".getBytes()));
@@ -405,5 +405,5 @@ public class AppMain {
         calendar.set(Calendar.MILLISECOND, 0);
         calendar.add(Calendar.DAY_OF_MONTH, next);
         return calendar.getTime();
-    }
+    }*/
 }
