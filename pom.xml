@@ -62,6 +62,7 @@
             <artifactId>poi</artifactId>
             <version>3.15</version>
         </dependency>
+
         <dependency>
             <groupId>io.swagger</groupId>
             <artifactId>swagger-models</artifactId>
@@ -74,31 +75,19 @@
             <version>2.1.7</version>
         </dependency>
 
+        <!--hutool工具类-->
         <dependency>
             <groupId>cn.hutool</groupId>
             <artifactId>hutool-all</artifactId>
             <version>5.4.1</version>
         </dependency>
 
+        <!--hutool工具类中pinyin所需要的jar包-->
         <dependency>
             <groupId>io.github.biezhi</groupId>
             <artifactId>TinyPinyin</artifactId>
             <version>2.0.3.RELEASE</version>
         </dependency>
 
-        <dependency>
-            <groupId>com.jdjr.postloan</groupId>
-            <artifactId>ccs_public_export</artifactId>
-            <version>1.1.14</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.jdjr.postloan.cs.data</groupId>
-            <artifactId>ccs_data_export</artifactId>
-            <version>1.8.3</version>
-        </dependency>
-
     </dependencies>
-
-
 </project>
