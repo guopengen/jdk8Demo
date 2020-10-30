@@ -6,5 +6,7 @@ package com.enumTest;
  * @Date 2020/8/26 21:40
  */
 public interface CodeEnum<T> {
-    T getCode();
+    Integer getCode();
+
+    String getMsg();
 }

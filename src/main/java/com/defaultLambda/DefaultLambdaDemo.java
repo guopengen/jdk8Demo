@@ -5,7 +5,7 @@ import java.util.function.*;
 
 /**
  * @author wangpengfei101022
- * @Description:
+ * @Description: java8的特性函数
  * @date 2019/12/19 15:57
  */
 public class DefaultLambdaDemo {

@@ -9,24 +9,14 @@ import lombok.Getter;
  */
 @Getter
 public enum NoticeEnum implements CodeEnum{
-    TEST1(1,"成功"),
-    TEST2(2,"失败");
+    UP_PRODUCT(0,"已上架"),
+    DOWN_PRODUCT(1,"已下架");
 
-
-    private int code;
+    private Integer code;
     private String msg;
 
-    NoticeEnum(int code, String msg) {
+    NoticeEnum(Integer code, String msg) {
         this.code = code;
         this.msg = msg;
-    }
-
-
-    public String getMsg() {
-        return msg;
-    }
-
-    public Integer getCode() {
-        return code;
     }
 }

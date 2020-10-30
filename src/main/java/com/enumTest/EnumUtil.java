@@ -6,12 +6,12 @@ package com.enumTest;
  * @Date 2020/8/26 21:40
  */
 public class EnumUtil {
-    public static <T extends CodeEnum> T getByCode(Integer code, Class<T> enumClass) {
-        for (T each: enumClass.getEnumConstants()) {
-            if (code.equals(each.getCode())) {
-                return each;
+    public static <T extends CodeEnum> String getByCode(Integer code, Class<T> t){
+        for(T item: t.getEnumConstants()){
+            if(item.getCode().equals(code)){
+                return item.getMsg();
             }
         }
-        return null;
+        return "";
     }
 }

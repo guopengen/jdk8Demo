@@ -14,8 +14,8 @@ import java.util.concurrent.ConcurrentHashMap;
  */
 public class FailFastAndSafeFastTest {
     public static void main(String[] args) {
-        //failFastTest();
-        safeFastTest();
+        failFastTest();
+        //safeFastTest();
     }
 
     private static void failFastTest(){
@@ -29,7 +29,7 @@ public class FailFastAndSafeFastTest {
         while (iterator.hasNext()) {
             System.out.println(iterator.next());
             hashMap.remove("不只Java-3");
-            hashMap.put("不只Java-3", 4);
+            //hashMap.put("不只Java-3", 4);
             System.out.println("此时 hashMap 长度为" + hashMap.size());
         }
     }
@@ -44,6 +44,7 @@ public class FailFastAndSafeFastTest {
         Iterator iterator = set.iterator();
 
         while (iterator.hasNext()) {
+            concurrentHashMap.remove("不只Java-3");
             System.out.println(iterator.next());
             concurrentHashMap.put("下次循环正常执行", 4);
         }

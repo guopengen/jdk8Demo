@@ -5,6 +5,9 @@ package com.base;
  *  i++ 即后加加，原理是：先自增，然后返回自增之前的值
     ++i 即前加加，原理是：先自增，然后返回自增后的值
     一个变量也是表达式，多个表达式的加减法运算都是从左到右进行的
+
+    讨论区的小知识：
+    只是i++,那么i等于1   而i = i++,i等于0的。
  * @Author wangpengfei101022
  * @Date 2020/9/29 21:57
  */
@@ -41,11 +44,12 @@ public class SelfAdd {
 //        System.out.println(k);// 1+3+2+2=8
 
         //第六个
-        int a = 0;
-        int b = 0;
-        a = a++;
-        b = a++;
-        System.out.println(a);//1
-        System.out.println(b);//0
+//        int a = 0;
+//        int b = 0;
+//        a = a++;
+//        b = a++;
+//        System.out.println(a);//1
+//        System.out.println(b);//0
+
     }
 }

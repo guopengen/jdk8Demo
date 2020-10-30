@@ -14,8 +14,8 @@ import java.util.concurrent.Future;
  * @Date 2020/5/14 16:50
  */
 public class FutureTest {
-    /*public static void main(String[] args) {
-        //List<FuturePerson> futurePersonList = Arrays.asList(new FuturePerson("xiaowang",12),new FuturePerson("xiaohong",13));
+    public static void main(String[] args) {
+        /*//List<FuturePerson> futurePersonList = Arrays.asList(new FuturePerson("xiaowang",12),new FuturePerson("xiaohong",13));
         List<FuturePerson> futurePersonList = new ArrayList<>();
         for (int i=0;i<100;i++) {
             futurePersonList.add(new FuturePerson("xiaoxiao"+i,12));
@@ -28,15 +28,15 @@ public class FutureTest {
             if (start == end) {
                 break;
             }
-            futureList.add();
+            futureList.add(testFuture());
             start = end;
             end = (end + THREAD_CASE_COUNT) < total ? (end + THREAD_CASE_COUNT) : total;
         }
-        int executeCount = getExecuteCount(futureList);
-    }*/
+        int executeCount = getExecuteCount(futureList);*/
+    }
 
-  /*  private Future<Integer> testFuture(){
-
+  /* private Future<Integer> testFuture(){
+        return new AsyncResult<>(successCount);
     }*/
 
 
